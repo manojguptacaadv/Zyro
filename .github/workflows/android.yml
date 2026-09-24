@@ -28,10 +28,4 @@ jobs:
               echo "Searching for APK files..."
               find . -type f -name "*.apk" -print
    
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-           name: app-debug
-           path: '**/.apk'
-           if-no-files-found: error
-        
+     
