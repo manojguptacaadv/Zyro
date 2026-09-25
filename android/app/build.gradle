@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     namespace = "com.workride.mobility"
-    compileSdk = 35
+    compileSdk = 36
     defaultConfig {
         applicationId "com.workride.mobility"
         minSdkVersion 23
