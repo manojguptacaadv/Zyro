@@ -38,6 +38,12 @@ jobs:
       - name: Make Gradle executable
         run: chmod +x android/gradlew
 
+      - name: Check Android files
+        run: |
+          pwd
+          ls -la android/app/src/main
+          test -f android/app/src/main/AndroidManifest.xml
+
       - name: Build APK
         run: ./android/gradlew -p android assembleDebug
 
