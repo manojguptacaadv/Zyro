@@ -31,7 +31,12 @@ jobs:
 
       - name: Build web app
         run: npm run build
-      
+
+      - name: Recreate Android project
+        run: |
+          rm -rf android
+          npx cap add android
+    
       - name: Make Gradle executable
         run: chmod +x android/gradlew
 
